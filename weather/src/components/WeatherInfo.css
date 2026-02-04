@@ -1,0 +1,36 @@
+.WeatherInfo {
+  margin: 15px 0px; /*상하 15px, 좌우 0px*/
+
+  display: flex;
+  flex-direction: column;
+
+  /* flex-direction이 column이므로 가운데 정렬도 반대가 됨*/
+  justify-content: center; /* 가로 가운데 */
+  align-items: center;
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.weather_wrapper {
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.sideInfo_wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.feel,
+.humidity,
+.wind {
+  background-color: rgb(246, 246, 246);
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: default;
+  margin-bottom: 30px;
+}

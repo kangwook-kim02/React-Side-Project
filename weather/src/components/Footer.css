@@ -1,0 +1,20 @@
+.Footer {
+  display: flex;
+  gap: 20px;
+  font-size: 15px;
+  align-items: center;
+  justify-content: center; /* 가로 가운데 */
+}
+
+.author {
+  color: gray;
+}
+
+.select_wrapper {
+  font-weight: bold;
+  background-color: rgb(246, 246, 246);
+  padding: 10px;
+  display: flex;
+  gap: 15px;
+  border-radius: 5px;
+}

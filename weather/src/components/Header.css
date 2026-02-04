@@ -1,0 +1,30 @@
+.Header {
+  height: 100px;
+  display: flex;
+  justify-content: center; /* 가로 가운데 */
+  border-bottom: 1px solid rgb(226, 226, 226);
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Header_title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.button_wrapper {
+  justify-content: left;
+  display: flex;
+  gap: 5px;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.date {
+  margin-left: 5px;
+}
