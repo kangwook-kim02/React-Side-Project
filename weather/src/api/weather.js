@@ -15,3 +15,17 @@ export const getCurrentWeather = async (city) => {
 
   return res.data;
 };
+
+// 내일, 모레 날씨를 구하기 위해서
+export const getListWeather = async (city) => {
+  const res = await axios.get(`${BASE_URL}/forecast`, {
+    params: {
+      q: city,
+      appid: API_KEY,
+      units: "metric",
+      lang: "kr",
+    },
+  });
+
+  return res.data;
+};
