@@ -1,0 +1,10 @@
+.MovieList {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.notfound,
+.loading {
+  padding: 10px;
+}

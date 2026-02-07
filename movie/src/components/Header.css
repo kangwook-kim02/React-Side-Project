@@ -1,0 +1,73 @@
+.Header {
+  background-color: #18181c;
+  color: white;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  border-bottom: 1px solid #2f2f38;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  padding: 0 24px;
+}
+.Header h3 {
+  margin: 0;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.search_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  gap: 3px;
+}
+
+.Header input {
+  flex: 1;
+  border: none;
+  box-sizing: border-box;
+  height: 40px;
+  max-width: 350px;
+  background-color: #23232a;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 17px;
+  color: #ededed;
+  border: 1px solid #2f2f38;
+}
+
+.Header input:focus {
+  outline: none;
+  border-color: #ededed; /* 포인트 컬러 */
+}
+
+.Header input::placeholder {
+  color: #8b90a0;
+}
+
+.Header button {
+  border: none;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  background-color: #23232a;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 30px;
+  transform: scaleX(-1); /*돋보기 글씨 좌우 반전*/
+  color: #ededed;
+  font-weight: bold;
+  border: 1px solid #2f2f38;
+}
+
+.Header button:hover {
+  background: #2e2e38;
+  transform: scaleX(-1);
+}
+
+.Header button:active {
+  background: #3a3a48;
+  transform: scaleX(-1);
+}
