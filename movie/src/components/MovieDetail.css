@@ -1,0 +1,42 @@
+.MovieDetail img {
+  width: 200px;
+  height: 100%;
+}
+
+.MovieDetail .poster_wrapper {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.MovieDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  margin: 0px 20px;
+}
+
+.MovieDetail .overview_wrapper p {
+  text-align: justify;
+  font-size: 17px;
+}
+
+.MovieDetail .flag {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.MovieDetail .vote_wrapper,
+.release_wrapper {
+  display: flex;
+  justify-content: left;
+  margin: 17px 0;
+  font-size: 17px;
+}

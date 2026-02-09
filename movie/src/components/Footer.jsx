@@ -1,9 +1,9 @@
 import "./Footer.css";
 
-const Footer = ({ page, setPage, data }) => {
+const Footer = ({ page, setPage, data, totalPage }) => {
 
     const onIncreaseButton = () => {
-        if (data.length === 0) return;
+        if (page >= totalPage) return;
         setPage(page + 1);
     }
 
@@ -14,9 +14,12 @@ const Footer = ({ page, setPage, data }) => {
     }
 
     return <div className="Footer">
-        <div className="left"><button onClick={onDecreaseButton}>{"<"}</button></div>
-        <div className="center">{page}</div>
-        <div className="right"><button onClick={onIncreaseButton}>{">"}</button></div>
+        <div className="Footer_wrapper">
+            <div className="left"><button onClick={onDecreaseButton}>{"<"}</button></div>
+            <div className="center">{page}/{totalPage}</div>
+            <div className="right"><button onClick={onIncreaseButton}>{">"}</button></div>
+        </div>
+        <div className="copy">Copyright 2026. 김강욱</div>
     </div>
 }
 

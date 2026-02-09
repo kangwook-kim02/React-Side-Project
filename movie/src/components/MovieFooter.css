@@ -1,4 +1,4 @@
-.Footer {
+.MovieFooter {
   background-color: #18181c;
   color: white;
   height: 80px;
@@ -12,30 +12,22 @@
   padding: 0 24px;
 }
 
-.Footer_wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
+.MovieFooter button {
 }
 
-.Footer button {
+.MovieFooter button {
   background-color: #23232a;
   border: #2f2f38;
   cursor: pointer;
   color: #ededed;
+  font-size: 17px;
 }
 
-.Footer button:hover {
+.MovieFooter button:hover {
   background: #2e2e38;
   transform: translateY(-1px);
 }
-
-.Footer button:active {
+.MovieFooter button:active {
   background: #3a3a48;
   transform: translateY(0);
-}
-
-.copy {
-  justify-content: right;
 }

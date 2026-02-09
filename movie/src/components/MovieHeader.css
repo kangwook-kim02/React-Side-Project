@@ -1,0 +1,17 @@
+.MovieHeader {
+  background-color: #18181c;
+  color: white;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid #2f2f38;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  padding: 0 24px;
+}
+
+.MovieHeader h3 {
+  margin: 0;
+  font-size: 30px;
+  cursor: pointer;
+}

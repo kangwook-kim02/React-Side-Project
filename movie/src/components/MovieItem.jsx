@@ -1,12 +1,15 @@
 import "./MovieItem.css";
+import { useNavigate } from "react-router-dom";
 
-const MovieItem = ({ title, overview, vote_average, vote_count, poster_path }) => {
+const MovieItem = ({ id, title, overview, vote_average, vote_count, poster_path }) => {
 
     const base_poster_url = import.meta.env.VITE_TMDB_POSTER_URL;
-
+    const nav = useNavigate();
 
     return (
-        <div className="MovieItem">
+        <div onClick={() => {
+            nav(`/movie/${id}`); // 영화에 해당되는 id로 주소를 넘김
+        }} className="MovieItem">
             <div className="poster_wrapper">
                 <img src={`${base_poster_url}/${poster_path}`} alt="포스터" />
             </div>
