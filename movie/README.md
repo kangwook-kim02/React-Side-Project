@@ -1,16 +1,20 @@
-# React + Vite
+## 영화검색앱 - 영화모아
+원하는 영화를 검색하고, 해당 영화의 상세사항(제목,줄거리,평점 등)을 확인할 수 있다. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## TMDB API 연습
+- axios 라이브러리를 이용한 API 호출
 
-Currently, two official plugins are available:
+## 파일 설명
+- src/api/tmdb.js: 여러 API 함수를 만들어야하는 상황에 대한 확장성 고려로, 동일한 axios 객체를 생성 함수
+- src/api/searchMovies.js: query(=검색할 영화 제목), page(=가져올 데이터의 페이지)를 파라미터로 갖는 API 호출 함수
+- src/componets/*.jsx: Header, MovieList, MovieItem, Footer 컴포넌트
+- src/pages/*.jsx: 필요한 페이지
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 핵심 구현
+- 라우터 기능을 이용하여, "/"의 경우 "Home" component를 반환, Home에서 영화 검색을 할 수 있음
+- 라우터 기능일 이용하여, "/movie/:id"의 경우 data state에 저장된 영화 리스트 중 id와 동일한 영화의 상세정보를 확인할 수 있음
+- map 함수를 활용하여 MovieItem을 return
+- filter 함수를 사용하여, URL의 id와 원소의 id가 동일한 경우 해당 배열의 원소를 return
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## UI
+<img src="./assests/movie.gif">
