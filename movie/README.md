@@ -20,6 +20,6 @@
 - map 함수를 활용하여 MovieItem을 return
 - filter 함수를 사용하여, URL의 id와 원소의 id가 동일한 경우 해당 배열의 원소를 return
 
-## UI
+## UI - 영화모아
 
 <img src="./assets/movie.gif">
