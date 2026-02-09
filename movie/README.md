@@ -23,3 +23,4 @@
 ## UI - 영화모아
 
 <img src="./assets/movie.gif">
+<img src="./assets/footer.png">
