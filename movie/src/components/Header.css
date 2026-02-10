@@ -14,6 +14,7 @@
   margin: 0;
   font-size: 30px;
   cursor: pointer;
+  min-width: 110px;
 }
 
 .search_wrapper {
@@ -22,6 +23,7 @@
   align-items: center;
   flex: 1;
   gap: 3px;
+  min-width: 0;
 }
 
 .Header input {
@@ -30,6 +32,7 @@
   box-sizing: border-box;
   height: 40px;
   max-width: 350px;
+  min-width: 50px;
   background-color: #23232a;
   border-radius: 10px;
   padding: 10px;
@@ -50,7 +53,7 @@
 .Header button {
   border: none;
   box-sizing: border-box;
-  width: 40px;
+  max-width: 40px;
   height: 40px;
   background-color: #23232a;
   border-radius: 10px;
